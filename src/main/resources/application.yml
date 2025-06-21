@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: spai
+  ai:
+    openai:
+      base-url: https://api.deepseek.com
+      api-key: ${DEEPSEEK}
+      chat:
+        options:
+          model: deepseek-chat
+server:
+  port: 10032
