@@ -2,11 +2,15 @@ spring:
   application:
     name: spai
   ai:
-    openai:
-      base-url: https://api.deepseek.com
-      api-key: ${DEEPSEEK}
+    ollama:
+      base-url: http://172.31.192.165:11434
       chat:
-        options:
-          model: deepseek-chat
+        model: qwen3:4b
+    # openai:
+    #   base-url: https://api.deepseek.com
+    #   api-key: ${DEEPSEEK}
+    #   chat:
+    #     options:
+    #       model: deepseek-chat
 server:
   port: 10032
